@@ -15,7 +15,6 @@ const Image: FC<AccountEditProps> = ({setLoading}) => {
 		setLoading(true);
 		let data = new FormData();
 		data.append('image', file);
-		console.log(clientId);
 		let config = {
 			headers: {
 				Authorization: `Client-ID ${clientId}`,
