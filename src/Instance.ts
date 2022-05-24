@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const url = `${process.env.REACT_APP_LOCAL_NETWORK_IP}`
+export const url = `${process.env.REACT_APP_BACKEND_IP}`
 
 export const instance = axios.create({
 	baseURL: `https://${url}/api/`,
