@@ -2,8 +2,10 @@ import axios from "axios";
 
 export const url = `${process.env.REACT_APP_BACKEND_IP}`
 
+const protocol = location.protocol;
+
 export const instance = axios.create({
-	baseURL: `http://${url}/api/`,
+	baseURL: `${protocol}//${url}/api/`,
 });
 
 instance.interceptors.request.use((config) => {

@@ -66,7 +66,7 @@ const Chat: FC = () => {
 	useEffect(() => {
 		if(authenticated && user && !connected){
 			dispatch(connectToChat(
-				`ws://${url}/ws/chat/?token=${localStorage.getItem('token')}`,
+				`ws${location.protocol.length === 6 ? 's': ''}://${url}/ws/chat/?token=${localStorage.getItem('token')}`,
 				onopen,
 				onclose,
 				onmessage
