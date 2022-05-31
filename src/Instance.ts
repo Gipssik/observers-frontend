@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const url = `${process.env.REACT_APP_BACKEND_IP}`
 
-const protocol = location.protocol;
+const protocol = window.location.protocol;
 
 export const instance = axios.create({
 	baseURL: `${protocol}//${url}/api/`,
