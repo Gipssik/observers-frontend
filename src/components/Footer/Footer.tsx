@@ -1,11 +1,7 @@
-import React, {FC} from 'react';
+import React, { FC } from "react";
 
 const Footer: FC = () => {
-	return (
-		<footer className='main-footer'>
-			©Made by Gipss
-		</footer>
-	);
+  return <footer className="main-footer">©Made by Gipss</footer>;
 };
 
 export default Footer;
