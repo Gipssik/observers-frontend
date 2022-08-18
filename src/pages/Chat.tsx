@@ -19,10 +19,11 @@ const Chat: FC = () => {
 
   const send = (message: string) => {
     if (ws && user) {
+      let date = new Date();
       let data: IMessage = {
         user: user.username,
         message: message,
-        time: new Date().toLocaleTimeString().slice(0, -3),
+        time: `${date.getHours()}:${date.getMinutes()}`,
       };
       ws.send(JSON.stringify(data));
     }
