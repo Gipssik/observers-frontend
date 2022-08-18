@@ -61,6 +61,7 @@
     }
 
     .single-question-content p,
+    .comment-content p,
     .preview-container p{
         @apply my-3;
     }
